@@ -1,4 +1,5 @@
-# Darshini_LF_Person_Detection# Multi-App Analysis Hub: Face Detection & Lost Item Finder
+# Darshini_LF_Person_Detection
+# Multi-App Analysis Hub: Face Detection & Lost Item Finder
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.30%2B-orange.svg)
