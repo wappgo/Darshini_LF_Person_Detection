@@ -54,47 +54,38 @@ Follow these steps carefully to get the application running locally.
 -   A running PostgreSQL database.
 
 ### 2. Clone the Repository
+# Project Setup
+
 ```bash
+# 1. Clone the Repository
 git clone <your-repository-url>
 cd <your-repository-folder>
-3. Set Up the Virtual Environment
-It's crucial to use a virtual environment to manage dependencies.
-On Windows:
-code
-Bash
+
+# 2. Set Up the Virtual Environment
+# Windows:
 python -m venv venv
 .\venv\Scripts\activate
-On macOS / Linux:
-code
-Bash
+# macOS / Linux:
 python3 -m venv venv
 source venv/bin/activate
-You will know it's active when you see (venv) at the beginning of your terminal prompt.
-4. Install Dependencies
-Install all the required Python packages using the requirements.txt file.
-code
-Bash
+# You will know it's active when you see (venv) at the beginning of your terminal prompt.
+
+# 3. Install Dependencies
 pip install -r requirements.txt
-5. Configure Environment Variables
-This application requires a .env file to store your database credentials securely.
-Create a new file named .env in the main project directory.
-Copy the content below into your .env file and replace the placeholder values with your actual PostgreSQL database credentials.
-code
-Ini
-# .env file
 
-DB_USER="your_database_user"
-DB_PASSWORD="your_database_password"
-DB_HOST="localhost"
-DB_PORT="5432"
-DB_NAME="your_database_name"
+# 4. Configure Environment Variables
+# Create a .env file with your PostgreSQL credentials:
+echo "DB_USER=\"your_database_user\"
+DB_PASSWORD=\"your_database_password\"
+DB_HOST=\"localhost\"
+DB_PORT=\"5432\"
+DB_NAME=\"your_database_name\"" > .env
 
-6. Populate Image Database
-For the "Find Last Seen Location" feature to work, you must place images of people into the Detection_app/camera_feed_* subfolders. The file names should represent the time, for example 10-30-AM.png.
-Running the Application
-After completing the setup, run the main app.py file from your terminal. Make sure your virtual environment is still active.
-Use the following command for the most reliable launch:
-code
-Bash
+# 5. Populate Image Database
+# Place images into Detection_app/camera_feed_* subfolders
+# File names should represent the time, e.g., 10-30-AM.png
+
+# 6. Run the Application
 python -m streamlit run app.py
-Your web browser should automatically open with the application running. You can navigate between the "Age Detection" and "Lost and Found" apps using the sidebar.
+# Your web browser should automatically open with the app running.
+# Navigate between "Age Detection" and "Lost and Found" using the sidebar.
