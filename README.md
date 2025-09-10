@@ -28,7 +28,8 @@ This project is a multi-functional web application hub built with Streamlit. It 
 -   **Dynamic Display**: Presents found items in a clean, responsive grid with images and details.
 
 ## Project Structure
-/LOST_AND_FOUND/
+```
+/LOST_AND_FOUND and AGE DETECTION & FACE ANALYZER/
 ├── app.py # The main Streamlit router/entry point for the hub.
 |
 ├── Detection_app/ # Module for the Age & Face Detection app.
@@ -42,8 +43,8 @@ This project is a multi-functional web application hub built with Streamlit. It 
 ├── .env # Stores all secret credentials (DATABASE CONNECTION).
 ├── requirements.txt # A list of all required Python packages.
 └── venv/ # The Python virtual environment folder.
-code
-Code
+```
+
 ## Setup and Installation
 
 Follow these steps carefully to get the application running locally.
