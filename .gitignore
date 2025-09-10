@@ -3,3 +3,19 @@ venv
 Detection_app\__pycache__
 lost_and_found\__pycache__
 age_model_weights.h5
+
+
+
+# Datasets & models (too large for GitHub)
+*.h5
+*.hdf5
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.pb
+*.tflite
+*.joblib
+*.pkl
+*.npz
+*.npy
