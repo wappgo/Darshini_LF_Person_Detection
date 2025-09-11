@@ -84,8 +84,7 @@ DB_PORT=\"5432\"
 DB_NAME=\"your_database_name\"" > .env
 
 # 5. Populate Image Database
-# Place images into Detection_app/camera_feed_* subfolders
-# File names should represent the time, e.g., 10-30-AM.png
+
 
 # 6. Run the Application
 python -m streamlit run app.py
